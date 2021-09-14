@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F8FF"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/selamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Selamat datang di,"
+            android:textColor="#8F90E2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/univ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selamat"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Univ. Nurul Jadid"
+            android:textColor="#494AE2"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/univ"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_belakang" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/bg_depan"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/nim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="1821400092"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nim"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Abdul Karim"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/prodi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/ipk"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Informatika"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ipk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="IPK 3.75"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_sks"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="120 SKS"
+                        android:textColor="#494AE2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Menu Informasi"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_menu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_krs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="KRS"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_menu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_khs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="KHS"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_menu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_transkip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Transkip"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Nilai"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_menu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_elearning" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="E-Learning"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_menu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_tagihan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Tagihan"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Kuliah"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_menu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_biodata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Biodata"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu2"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Notifikasi"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lihat Semua"
+            android:textColor="#494AE2"
+            android:textSize="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/notif1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/notif"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_notif"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/garis"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_garis"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/pendaftaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/garis"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Pendaftaran Program KKN"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="X"
+                android:textColor="#A4A4A4"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pendaftaran"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/garis"
+                android:fontFamily="@font/poppins"
+                android:text="Kuliah Kerja Nyata (KKN) Tematik Covid-19 Universitas Nurul Jadid Tahun 2020"
+                android:textColor="#A4A4A4"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notif2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/notif1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_notif"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/garis1"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_garis"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/pendaftaran1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/garis1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Pendaftaran Program KKN"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="X"
+                android:textColor="#A4A4A4"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pendaftaran1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/garis1"
+                android:fontFamily="@font/poppins"
+                android:text="Kuliah Kerja Nyata (KKN) Tematik Covid-19 Universitas Nurul Jadid Tahun 2020"
+                android:textColor="#A4A4A4"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
